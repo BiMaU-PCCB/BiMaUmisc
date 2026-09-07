@@ -154,7 +154,10 @@ survival.plot <- function(data, time, status, strata = 1,
   
   # reset options at exit
   op.def <- options()
-  options(scipen = 999) # modifies display arguments in TeX()
+  on.exit(options(op.def), add = TRUE)
+  
+  # modifies display arguments in TeX()
+  options(scipen = 999) 
   
   # columns
   time <- gsub("\\s+", "", gsub('^"|"$', '', deparse(substitute(time))))
@@ -174,10 +177,6 @@ survival.plot <- function(data, time, status, strata = 1,
     }
     if(!is.factor(data[, strata])) {
       stop("'strata' must be a factor")
-    }
-    if (any(table(data[, strata]) == 0)) {
-      warning("'strata' column has (at least) one empty level. Calculation proceeds ignoring the empty level(s)")
-      data[, strata] <- factor(data[, strata])
     }
     if (length(levels(strata)) > 4) {
       stop("'strata' must have less than 5 levels")
@@ -320,6 +319,10 @@ survival.plot <- function(data, time, status, strata = 1,
     if (any(table(data[, strata]) == 0)) {
       warning("'strata' column has (at least) one empty level. Calculation proceeds ignoring the empty level(s)")
       data[, strata] <- factor(data[, strata])
+    }
+    if (p.value & any(table(data[, strata]) < 5)) {
+      warning("'strata' column has (at least) one level with less than 5 observations. Calculation proceeds assuming p.value = FALSE")
+      p.value <- FALSE
     }
   }
 
@@ -678,7 +681,4 @@ survival.plot <- function(data, time, status, strata = 1,
       text(times, -0.43, nrisk$n.risk[1:length(times)], cex = risk.cex)
     }
   }
-  
-  # reset options
-  options(op.def)
 }

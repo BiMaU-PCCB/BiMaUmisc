@@ -6,14 +6,19 @@
 \alias{BiMaUmisc-package}
 \title{BiMaU Miscellaneous}
 \description{
-This package contains useful data analysis tools, such as a function to plot survival curves, a function to format \emph{p}-values, 
-and a function (work in progress) to automatically select the test to apply when assessing differences in continuous variables between groups.
+Contains a function to plot publication-ready survival curves using the Kaplan-Meier method (1958), 
+a function to format \emph{p}-values, and a function to automatically select statistical tests
+for comparing continuous variables between groups, which are useful for repetitive analyses. 
+BiMaU stands for the Biostatistics and Mathematics Research Unit at the Sant Joan de Déu - Pediatric Cancer Center Barcelona.
 }
 \section{Functions}{
 
-\code{\link[BiMaUmisc]{show.p}}, \code{\link[BiMaUmisc]{survival.plot}}
+\code{\link[BiMaUmisc]{show.p}}, \code{\link[BiMaUmisc]{survival.plot}}, \code{\link[BiMaUmisc]{find.test}}
 }
 
+\references{
+Kaplan, E. L., & Meier, P. (1958). Nonparametric Estimation from Incomplete Observations. Journal of the American Statistical Association, 53(282), 457–481.
+}
 \author{
 \strong{Maintainer}: Anna Felip-Badia \email{annafelipibadia@gmail.com} (\href{https://orcid.org/0009-0002-8751-5228}{ORCID})
 
