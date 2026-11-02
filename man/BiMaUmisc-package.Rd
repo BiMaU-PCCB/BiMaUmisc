@@ -19,13 +19,20 @@ BiMaU stands for the Biostatistics and Mathematics Research Unit at the Sant Joa
 \references{
 Kaplan, E. L., & Meier, P. (1958). Nonparametric Estimation from Incomplete Observations. Journal of the American Statistical Association, 53(282), 457–481.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/BiMaU-PCCB/BiMaUmisc}
+  \item \url{https://bimau-pccb.github.io/BiMaUmisc/}
+}
+
+}
 \author{
 \strong{Maintainer}: Anna Felip-Badia \email{annafelipibadia@gmail.com} (\href{https://orcid.org/0009-0002-8751-5228}{ORCID})
 
 Authors:
 \itemize{
   \item Anna Felip-Badia \email{annafelipibadia@gmail.com} (\href{https://orcid.org/0009-0002-8751-5228}{ORCID})
-  \item Aleix Martín-Moral (\href{https://orcid.org/0009-0005-0529-3046}{ORCID})
   \item Sara Perez-Jaume (\href{https://orcid.org/0000-0002-9805-4810}{ORCID})
 }
 

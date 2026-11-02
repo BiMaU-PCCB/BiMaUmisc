@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^pkgdown$
+^_pkgdown\.yml$
+^doc$
+^Meta$
+^desktop\.ini$

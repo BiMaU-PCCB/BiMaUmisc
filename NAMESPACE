@@ -4,20 +4,26 @@ export(find.test)
 export(show.p)
 export(survival.plot)
 importFrom(exams,fmt)
-importFrom(graphics,axis)
-importFrom(graphics,par)
-importFrom(graphics,segments)
-importFrom(graphics,text)
+importFrom(graphics,
+  axis,
+  par,
+  segments,
+  text
+)
 importFrom(latex2exp,TeX)
 importFrom(plotfunctions,isColor)
-importFrom(stats,aov)
-importFrom(stats,as.formula)
-importFrom(stats,bartlett.test)
-importFrom(stats,na.omit)
-importFrom(stats,residuals)
-importFrom(stats,shapiro.test)
-importFrom(stats,var.test)
-importFrom(survival,Surv)
-importFrom(survival,survdiff)
-importFrom(survival,survfit)
+importFrom(stats,
+  aov,
+  as.formula,
+  bartlett.test,
+  na.omit,
+  residuals,
+  shapiro.test,
+  var.test
+)
+importFrom(survival,
+  Surv,
+  survdiff,
+  survfit
+)
 importFrom(utils,tail)

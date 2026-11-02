@@ -1,0 +1,21 @@
+url: https://bimau-pccb.github.io/BiMaUmisc/
+
+template:
+  bootstrap: 5
+  math-rendering: mathjax
+
+figures:
+  dev: grDevices::png
+  dpi: 96
+
+navbar:
+  structure:
+    left: [intro, reference, news]
+    right: [search, github]
+
+reference:
+  - title: "Functions"
+    contents:
+      - find.test
+      - show.p
+      - survival.plot

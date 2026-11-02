@@ -140,6 +140,8 @@ For optimal resolution and layout alignment when using the function in an R mark
 }
 
 \examples{
+# CAUTION: Before running through the Console, read Note to ensure proper 
+# visualization (how to modify dimensions of the Plot window).
 lung <- survival::cancer
 lung$time_y <- lung$time/365.25
 lung$sex <- factor(lung$sex, levels = 1:2, labels = c("Male", "Female"))

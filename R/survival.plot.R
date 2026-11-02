@@ -106,6 +106,8 @@
 #' For optimal resolution and layout alignment when using the function in an R markdown file or similar, use \code{fig.dim = c(7, 5)} in the corresponding chunk.
 #' 
 #' @examples
+#' # CAUTION: Before running through the Console, read Note to ensure proper 
+#' # visualization (how to modify dimensions of the Plot window).
 #' lung <- survival::cancer
 #' lung$time_y <- lung$time/365.25
 #' lung$sex <- factor(lung$sex, levels = 1:2, labels = c("Male", "Female"))
@@ -117,7 +119,7 @@
 #'               xlab = "Time since diagnosis (in years)",
 #'               yscale = 100,
 #'               main = "Overall survival", mark.col = "darkgray")
-#'
+#' 
 #' # 2 strata
 #' survival.plot(lung, time_y, status, sex, units = "y")
 #' # customizing
@@ -134,8 +136,6 @@
 #' @importFrom utils tail
 #' 
 #' @export 
-
-
 
 survival.plot <- function(data, time, status, strata = 1, 
                           legend = TRUE, legend.pos = "bottomleft", legend.labs = NULL, 

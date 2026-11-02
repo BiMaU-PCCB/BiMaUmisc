@@ -1,23 +1,23 @@
 Package: BiMaUmisc
 Type: Package
 Title: BiMaU Miscellaneous
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(person("Anna", "Felip-Badia", email = "annafelipibadia@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0002-8751-5228")),
-             person("Aleix", "Martín-Moral", role = "aut", comment = c(ORCID = "0009-0005-0529-3046")),
-	     person("Sara", "Perez-Jaume", role = "aut", comment = c(ORCID = "0000-0002-9805-4810")))
+             person("Sara", "Perez-Jaume", role = "aut", comment = c(ORCID = "0000-0002-9805-4810")))
 Maintainer: Anna Felip-Badia <annafelipibadia@gmail.com>
-Description: Contains a function to plot publication-ready survival curves using the Kaplan-Meier method (1958) <doi:10.2307/2281868>, a function to format p-values, and a function to automatically select statistical tests for comparing continuous variables between groups, which are useful for repetitive analyses. BiMaU stands for the Biostatistics and Mathematics Research Unit at the Sant Joan de Déu - Pediatric Cancer Center Barcelona <https://github.com/BiMaU-PCCB>.
+Description: Contains a function to plot publication-ready survival curves using the Kaplan-Meier method (1958) <doi:10.2307/2281868>, a function to format p-values, and a function to automatically select statistical tests for comparing quantitative variables between groups, which are useful for repetitive analyses. BiMaU stands for the Biostatistics and Mathematics Research Unit at the Sant Joan de Déu - Pediatric Cancer Center Barcelona <https://github.com/BiMaU-PCCB>.
 License: GPL (>= 2)
 Depends: R (>= 4.1.0)
 Encoding: UTF-8
-Imports: exams, survival (>= 3.8-6), latex2exp, plotfunctions,
-        graphics, utils
-Suggests: gtsummary
-Config/roxygen2/version: 8.0.0
-NeedsCompilation: no
-Packaged: 2026-09-07 07:21:21 UTC; afelipb
-Author: Anna Felip-Badia [aut, cre] (ORCID:
-    <https://orcid.org/0009-0002-8751-5228>),
-  Aleix Martín-Moral [aut] (ORCID:
-    <https://orcid.org/0009-0005-0529-3046>),
-  Sara Perez-Jaume [aut] (ORCID: <https://orcid.org/0000-0002-9805-4810>)
+LazyData: true
+URL: https://github.com/BiMaU-PCCB/BiMaUmisc, https://bimau-pccb.github.io/BiMaUmisc/
+Imports: 
+    exams,
+    survival (>= 3.8-6),
+    latex2exp,
+    plotfunctions,
+    graphics,
+    utils
+Suggests:
+    gtsummary
+Config/roxygen2/version: 8.1.0
